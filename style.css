@@ -1,5 +1,5 @@
 body {
-    background-color: #683b3b;
+    background-color: #fefae0;
 }
 p, a{
     color: white;
@@ -34,22 +34,32 @@ ul{
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     text-align: center;
-    background-color: #f6e0b5;
+    background-color: #a8dadc;
     justify-self: center;
     padding: var(--size-30);
     align-self: center;
 }
 .top-four .preview-block, .recent-four .preview-block{
-    background-color: #c23f3f;
+    background-color: #264653;
     max-width: 100%;
     max-height: 100%;
+    border-radius: 8px;
 }
 
 
 footer {
     margin-top: var(--size-150);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
     top: 20%;
+    gap: var(--size-40);
+    align-items: center;
+}
+footer .contact-me{
+    width: var(--size-40);
+    height: var(--size-40);
+}
+.contact-me img {
+    filter: invert(90%) sepia(23%) saturate(477%) hue-rotate(336deg) brightness(100%) contrast(93%);
 }
